@@ -1,14 +1,14 @@
 # Linux basics
 
 ## Week 1
-- D1 - File structure
+- D1 - File system, liscence, bootloader & boot process
 - D2 - Static & shared libraries
 - D3 - Makefile
 - D4 - Multithreading
 - D5
 
 ## Week 2
-- D1 - Fork
+- D1 - Fork, wait_PID, system calls, process control, file manipulation
 - D2 -
 - D3 -
 - D4 -

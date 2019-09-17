@@ -1,0 +1,20 @@
+// Before semaphore
+
+Entered..
+
+
+Entered..
+
+Just Exiting...83230
+
+Just Exiting...109448
+
+// After semaphore
+Entered..
+
+Just Exiting...100000
+
+
+Entered..
+
+Just Exiting...200000

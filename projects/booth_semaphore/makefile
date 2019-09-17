@@ -5,7 +5,7 @@ TARGET = app
 # application.c
 SOURCES = $(wildcard ./*.c)
 # -ladder
-LIBS = -L$(PWD)/module_adder/ -ladder
+LIBS = -lpthread
 
 $(TARGET):
 	gcc -o $(TARGET) $(SOURCES) $(LIBS)
