@@ -1,0 +1,17 @@
+CFLAGS = -I./Inc/
+ 
+#LIBS = /Lib/somelib.a -lpthread -lcurl 
+
+TARGET = testmakefile
+SOURCES = $(wildcard ./*.c)
+OBJECTS  = $(SOURCES:.c=.o)
+all: $(TARGET)
+
+$(TARGET): $(OBJECTS)
+	$(CC)  $(CFLAGS) -o $(TARGET) $(OBJECTS) $(LIBS)
+
+.c.o:
+	$(CC) -c $(CFLAGS) $(LDFLAGS)  $< -o $@
+
+clean :
+	rm -rf $(PWD)/*.o $(TARGET)

@@ -1,0 +1,6 @@
+commnad to compile 
+gcc -o test hellofunc.c hellomake.c hellomake.h
+
+There is two make file in this folder
+u can use any of them 
+make will compile form file Makefile (name)

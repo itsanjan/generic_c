@@ -1,0 +1,32 @@
+Topic : Library creation in c on os's like linux
+
+1. Static :
+	Added to hex at compile time.
+	Extensions : .a
+	Compiler used : gcc
+		gcc stands for GNU compiler collection. GCC is a key coomponent of the GNU toolchain. gcc ( for C & g++ for c++) interprets command arguments, calls the actual compiler, runs the assembler on the output & then optionally runs the linker ti produce a complete executable binary.
+
+	gcc parameters:
+		1. -o filename : Ex gcc -o helloWorld helloWorld.c
+				-o parameter is the output of the executable file to be created. Ex. executable helloWorld on linux or helloWorld.exe on windows.
+
+2. Dynamic / shared library :
+	Added during runtime. The library has to be linked
+	Extensions : .so
+
+
+Differences :
+The downside of using a static library is that it’s code is locked into the final executable file and cannot be modified without a re-compile.
+In contrast, a dynamic library can be modified without a need to re-compile.
+
+The downside of using a dynamic library is that a program is much more susceptible to breaking. If a dynamic library for example becomes corrupt, the executable file may no longer work.
+A static library, however, is untouchable because it lives inside the executable file.
+
+The upside of using a dynamic library is that multiple running applications can use the same library without the need for each to have it’s own copy.
+
+Another benefit of using static libraries is execution speed at run-time. Because the it’s object code (binary) is already included in the executable file, multiple calls to functions can be handled much more quickly than a dynamic library’s code, which needs to be called from files outside of the executable.
+
+References :
+[1] https://www.geeksforgeeks.org/static-vs-dynamic-libraries/
+[2] https://hackernoon.com/static-and-dynamic-libraries-fe5d23daffe3
+[3] https://medium.com/@StueyGK/static-libraries-vs-dynamic-libraries-af78f0b5f1e4
